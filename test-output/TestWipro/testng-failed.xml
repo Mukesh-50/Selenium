@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestWipro]" parallel="classes">
+  <test name="CrossBrowsers(failed)" parallel="classes">
+    <classes>
+      <class name="Webdriver.TestIE">
+        <methods>
+          <include name="TestFB"/>
+        </methods>
+      </class> <!-- Webdriver.TestIE -->
+      <class name="Webdriver.TestChrome">
+        <methods>
+          <include name="TestFB"/>
+          <include name="TestSetup"/>
+        </methods>
+      </class> <!-- Webdriver.TestChrome -->
+      <class name="Webdriver.TestFirefox">
+        <methods>
+          <include name="TestFB"/>
+        </methods>
+      </class> <!-- Webdriver.TestFirefox -->
+    </classes>
+  </test> <!-- CrossBrowsers(failed) -->
+</suite> <!-- Failed suite [TestWipro] -->
